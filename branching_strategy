@@ -1,0 +1,24 @@
+# Approach or set of guidelines that a development team follows when creating and managing branches in a version control system like Git
+
+Feature Branching:
+
+Each new feature or development task is done in a dedicated branch.
+Developers create a branch for their feature, work on it, and merge it back to the main branch (e.g., main or master) once completed.
+This strategy allows for parallel development of multiple features and isolates changes until they are ready to be integrated into the main branch.
+GitFlow:
+
+This branching model separates development into different types of branches, such as feature, release, hotfix, and develop branches.
+The develop branch is used as the main development branch, and feature branches are created off the develop branch.
+When a set of features is ready for release, a new release branch is created from the develop branch. Once the release is tested and stable, it is merged into both the develop branch and a main (or master) branch.
+hotfix branches are used for immediate fixes in production code.
+Trunk-Based Development:
+
+This strategy encourages keeping the main branch (e.g., main or master) in a constantly releasable state.
+Developers work directly on the main branch or short-lived feature branches.
+Continuous integration (CI) and automated testing play a crucial role in ensuring the stability of the main branch.
+GitHub Flow:
+
+Similar to Trunk-Based Development, GitHub Flow promotes working directly on the main branch.
+Developers create a branch for each new feature or fix, work on it, and open a pull request (PR) when ready.
+Collaborators review the PR, and once approved, the changes are merged into the main branch.
+Continuous integration and automated testing are commonly used to validate the changes before merging.
