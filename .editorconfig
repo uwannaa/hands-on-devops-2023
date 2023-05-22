@@ -1,3 +1,6 @@
+#Define and maintin consistent coding styles across different editors and IDEs
+
+#applied to all files in the project directory
 root = true
 
 # Unix-style newlines with a newline ending every file
